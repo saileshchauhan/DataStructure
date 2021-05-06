@@ -39,9 +39,37 @@ namespace DataStructure
                     Console.WriteLine(temp.data+" ");
                     temp = temp.next;
                 }
-            }
-
+            } 
         }
+        internal Node Insert(int position,int data)
+        {
+            if(position<1)
+                Console.WriteLine("Invalid Position");
+            if (position == 1)
+            {
+                var newNode = new Node(data);
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else
+            {
+                while (position-- != 0)
+                {
+                    if (position == 1)
+                    {
+                        Node node = new Node(data);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    head = head.next;
+                }
+                if (position != 1)
+                    Console.WriteLine("Position Out Of range");
+            }
+            return head;
+        }
+
 
     }
 }
