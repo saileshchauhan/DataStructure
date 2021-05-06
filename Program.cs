@@ -15,6 +15,9 @@ namespace DataStructure
             list.Display();
             list.Remove_First_Element();
             list.Remove_Last_Element();
+            list.Search_Input_Value(30);
+
+
 
         }
     }

@@ -89,7 +89,7 @@ namespace DataStructure
             {
                 return head.next;
             }
-            Node newNode = head.next;
+            Node newNode = head;
             while (newNode.next.next!=null)
             {
                 newNode = newNode.next;
@@ -97,6 +97,18 @@ namespace DataStructure
             }
             newNode.next = null;
             return head;
+        }
+        public Node Search_Input_Value(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
+            }
+            return null;
         }
     }
 }
