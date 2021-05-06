@@ -14,7 +14,7 @@ public class LinkedListStack
         internal void Push(int value)
         {
             Node node = new Node(value);
-            if (this.top == null)
+            if (top == null)
             {
                  node.next = null;
             }

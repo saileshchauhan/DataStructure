@@ -17,13 +17,25 @@ namespace DataStructure
             //list.Remove_Last_Element();
             //list.Search_Input_Value(30);
 
-            LinkedListStack stack = new LinkedListStack();
-            //uc1
-            stack.Push(70);
-            stack.Push(56);
-            stack.Push(30);
-            //uc2
-            stack.pop();
+            //LinkedListStack stack = new LinkedListStack();
+            ////uc1
+            //stack.Push(70);
+            //stack.Push(56);
+            //stack.Push(30);
+            ////uc2
+            //stack.pop();
+
+            LinkedListQueue queue = new LinkedListQueue();
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
+            queue.Display();
+            Console.WriteLine("===============");
+            queue.Dequeue();
+
+
+
+
 
 
         }
