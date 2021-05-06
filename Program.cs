@@ -13,9 +13,8 @@ namespace DataStructure
           //list.Display();
             list.Insert(2, 30);
             list.Display();
-            Console.WriteLine("==============================================");
             list.Remove_First_Element();
-            list.Display();
+            list.Remove_Last_Element();
 
         }
     }
