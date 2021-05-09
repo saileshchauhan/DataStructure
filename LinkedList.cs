@@ -98,7 +98,7 @@ namespace DataStructure
             newNode.next = null;
             return head;
         }
-        public Node Search_Input_Value(int value)
+        internal Node Search_Input_Value(int value)
         {
             while (this.head != null)
             {
@@ -109,6 +109,23 @@ namespace DataStructure
                 this.head = this.head.next;
             }
             return null;
+        }
+        //UC8
+        internal Node Insert_40_After_30(int value,int afterValue)
+        {
+            Node temp = head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Node newNode1 = new Node(afterValue);
+                    newNode1.next = temp.next;
+                    temp.next = newNode1;
+                    break;
+                }
+                temp = temp.next;
+            }
+            return head;
         }
     }
 }

@@ -6,16 +6,19 @@ namespace DataStructure
     {
         static void Main(string[] args)
         {
-            //LinkedList list = new LinkedList();
-            //list.Add(56);
-            //list.Add(30);
-            //list.Add(70);
-            //list.Display();
-            //list.Insert(2, 30);
-            //list.Display();
+            LinkedList list = new LinkedList();
+            list.Add(56);
+            list.Add(30);
+            list.Add(70);
+            
+            list.Insert(2, 39);
             //list.Remove_First_Element();
             //list.Remove_Last_Element();
             //list.Search_Input_Value(30);
+            //UC 8
+            list.Insert_40_After_30(30, 40);
+
+
 
             //LinkedListStack stack = new LinkedListStack();
             ////uc1
@@ -25,13 +28,13 @@ namespace DataStructure
             ////uc2
             //stack.pop();
 
-            LinkedListQueue queue = new LinkedListQueue();
-            queue.Enqueue(56);
-            queue.Enqueue(30);
-            queue.Enqueue(70);
-            queue.Display();
-            Console.WriteLine("===============");
-            queue.Dequeue();
+            //LinkedListQueue queue = new LinkedListQueue();
+            //queue.Enqueue(56);
+            //queue.Enqueue(30);
+            //queue.Enqueue(70);
+            //queue.Display();
+            //Console.WriteLine("===============");
+            //queue.Dequeue();
 
 
 
