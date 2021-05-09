@@ -127,5 +127,22 @@ namespace DataStructure
             }
             return head;
         }
+        //UC9
+        internal void Delete_40_From_LinkedList(int value)
+        {
+            Node temp = head, prev = null ;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    prev.next = temp.next;
+                    break;
+                }
+                prev = temp;
+                temp = temp.next;
+            }
+            return ;
+            
+        }
     }
 }

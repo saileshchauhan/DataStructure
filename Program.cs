@@ -17,9 +17,11 @@ namespace DataStructure
             //list.Search_Input_Value(30);
             //UC 8
             list.Insert_40_After_30(30, 40);
+            //UC 9
+            list.Delete_40_From_LinkedList(40);
 
 
-
+            
             //LinkedListStack stack = new LinkedListStack();
             ////uc1
             //stack.Push(70);
